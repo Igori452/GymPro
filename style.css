@@ -1,0 +1,179 @@
+body, html
+{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header 
+{
+    width: 100vw;
+    padding: 30px 0px;
+
+    background: #000;
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.container 
+{
+    margin: auto;
+
+    width: 1440px;
+    height: 100%;
+}
+
+.header-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo-text 
+{
+    font-family: sans-serif;
+    font-size: 32px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.header__logo-text span
+{
+    color: #27B6C5;
+}
+
+.header__logo::after, .header__logo::before 
+{
+    content: '';
+
+    display: block;
+    width: 20px;
+    height: 2px;
+
+    border-radius: 3px;
+
+    background: #fff;
+}
+
+.header__nav 
+{
+    display: inline-flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header__link 
+{
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.hero-section
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    margin-top: 70px;
+}
+
+.hero-section__image-content
+{
+    width: 660px;
+    height: auto;
+
+    border-radius: 20px;
+}
+
+.hero-section__text-content 
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.hero-section__logo 
+{
+    width: fit-content;
+    margin-top: 10px;
+
+    position: relative;
+    top: 0px;
+    left: -200px;
+
+    font-family: sans-serif;
+    font-size: 128px;
+    line-height: 1.1;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), #000);
+    font-weight: bolder;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section__slogan 
+{
+    width: 100%;
+    text-align: right;
+
+    font-family: sans-serif;
+    font-size: 80px;
+    line-height: 0.1;
+    color: #000;
+    font-weight: bolder;
+}
+
+.hero-section__line 
+{
+    width: 100%;
+    height: 2px;
+
+    background: #777;
+    border-radius: 20px;
+
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.hero-section__desc 
+{
+    font-size: 24px;
+    color: #777;
+}
+
+.hero-section__btn 
+{
+    margin-top: auto; 
+    margin-left: auto;
+
+    border: none;
+
+    width: 280px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    background: #000;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+
+    display: inline-flex;
+}
