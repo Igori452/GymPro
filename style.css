@@ -278,14 +278,15 @@ section + section
 
 .case 
 {
-    padding: 40px 0px;
+    padding: 80px 0px;
     box-sizing: border-box;
 
-    background: url("images/back-gym.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/back-gym.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .case__content 
 {
@@ -369,6 +370,8 @@ section + section
     background: #000;
 
     border-radius: 20px;
+
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
 }
 
 .reviews__title 
