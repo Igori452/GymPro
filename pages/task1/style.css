@@ -1,3 +1,11 @@
+.picture__section 
+{
+    margin-top: 30px;
+    
+    display: flex;
+    gap: 20px;
+}
+
 .picture 
 {
     width: 200px;
@@ -14,8 +22,6 @@
 {
     width: 200px;
     height: 200px;
-
-    margin-top: 20px;
 
     background: url("./images/pic_with_mount.png");
     background-size: cover;

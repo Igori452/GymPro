@@ -1,6 +1,17 @@
 body, html
 {
     margin: 0px;
+
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h1, h2, h3 
@@ -48,6 +59,8 @@ ul
     display: inline-flex;
     align-items: center;
     gap: 10px;
+
+    text-decoration: none;
 }
 
 .logo-text 
@@ -89,6 +102,13 @@ ul
     color: #fff;
     font-family: sans-serif;
     text-decoration: none;
+}
+
+.nav__link:hover
+{
+    color: #27B6C5;
+    text-decoration: underline;
+    transition: all .2s;
 }
 
 .footer 
