@@ -43,8 +43,11 @@ ul
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 1440px;
     height: 100%;
+    max-width: 1440px;
+
+    padding: 0px 30px;
+    box-sizing: border-box;
 }
 
 .header-content
@@ -87,6 +90,20 @@ ul
     border-radius: 3px;
 
     background: #fff;
+}
+
+.nav__burger 
+{
+    display: none;
+}
+
+.nav__burger__line 
+{
+    height: 4px;
+    width: 100%;
+
+    background: #fff;
+    border-radius: 20px;
 }
 
 .nav 

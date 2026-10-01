@@ -1,0 +1,291 @@
+@media (max-width: 1230px) 
+{
+    .logo-text 
+    {
+        font-size: 30px;
+    }
+
+    .nav 
+    {
+        gap: 30px;
+    }
+
+    .hero-section__image-content
+    {
+        width: 560px;
+    }
+
+    .hero-section__logo 
+    {
+        font-size: 96px;
+    }
+
+    .hero-section__slogan 
+    {
+        font-size: 50px;
+    }
+
+    .hero-section__line
+    {
+        margin-top: 50px;
+    }
+
+    .hero-section__desc 
+    {
+        font-size: 18px;
+    }
+
+    .hero-section__btn 
+    {
+        width: 260px;
+        height: 65px;
+
+        font-size: 18px;
+    }
+
+    section + section 
+    {
+        margin-top: 120px;
+    }
+
+    .section__title 
+    {
+        font-size: 36px;
+        margin-bottom: 60px;
+    } 
+
+    .algorithm__steps_content p 
+    {
+        font-size: 18px;
+    }
+
+    .algorithm__steps li img 
+    {
+        width: 400px;
+    }
+
+    .algorithm__steps__subtitle 
+    {
+        font-size: 28px;
+        gap: 20px;
+    }
+
+    .algorithm__steps__subtitle__number 
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    .case__content > * 
+    {
+        max-width: 80%;
+    }
+
+    .case__content__exercises li 
+    {
+        width: 190px;
+    }
+
+    .case__content
+    {
+        font-size: 17px;
+    }
+
+    .reviews__title span, .reviews__title h3
+    {
+        font-size: 19px;
+    }
+    .reviews ul li 
+    {
+        font-size: 17px;
+    }
+
+    .footer__contacts__socials li img 
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer__contacts__mail {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .logo-text
+    {
+        font-size: 26px;
+    }
+
+    .logo::after, .logo::before
+    {
+        width: 18px;
+    }
+
+    .nav
+    {
+        display: none;
+    }
+
+    .nav__burger 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        width: 35px;
+    }
+
+    .hero-section__wrapper
+    {
+        margin-top: 0px;
+
+        background: url("../images/top-gym-image.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-section__image-content 
+    {
+        display: none;
+    }
+
+    .hero-section__text-content
+    {
+        margin: 0 auto;
+        width: 70%;
+
+        padding: 30px 0;
+    }
+
+    .hero-section__logo
+    {
+        position: static;
+
+        color: #fff;
+        background: transparent;
+
+        -webkit-text-fill-color: #fff;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+    }
+
+    .hero-section__slogan, .hero-section__desc
+    {
+        line-height: 1;
+        color: #fff;
+    }
+
+    .hero-section__line 
+    {
+        background: #fff;
+    }
+
+    .hero-section__btn 
+    {
+        margin-top: 50px;
+        background: #fff;
+        border-radius: 25px;
+
+        color: #000;
+    }
+
+    section + section {
+        margin-top: 90px;
+    }
+
+    .section__title 
+    {
+        font-size: 32px;
+    }
+
+    .algorithm__steps li:nth-child(1) 
+    { 
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                url("../images/diagram.jpg") no-repeat center / cover;
+    }
+
+    .algorithm__steps li:nth-child(2) 
+    {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                url("../images/select-exercises.jpg") no-repeat center / cover;
+    }
+
+    .algorithm__steps li:nth-child(3) 
+    {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                url("../images/result.jpg") no-repeat center / cover;
+    }
+
+    .algorithm__steps li 
+    {
+        padding: 20px 0px;
+    }
+
+    .algorithm__steps li img 
+    {
+        display: none;
+    }
+
+    .algorithm__steps li + li {
+        margin-top: 0px;
+    }
+
+    .algorithm__steps_content {
+        width: 90%;
+        border: 0;
+    }
+
+    .algorithm__steps__subtitle__number {
+        width: 60px;
+        height: 60px;
+    }
+
+    .algorithm__steps__subtitle 
+    {
+        font-size: 26px;
+    }
+
+    .case__content 
+    {
+        font-size: 16px;
+    }
+
+    .case__content__exercises li {
+        width: 180px;
+
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    .case__content > * {
+        max-width: 95%;
+    }
+
+    .reviews ul
+    {
+        grid-template-columns: 720px;
+    }
+
+    .reviews ul li {
+        padding: 20px 25px;
+        font-size: 16px;
+    }
+    
+    .reviews__title span, .reviews__title h3 {
+        font-size: 18px;
+    }
+
+    .footer {
+        margin-top: 70px;
+        padding: 50px 0px
+    }
+}
+
+@media (max-width: 768px) 
+{
+
+}

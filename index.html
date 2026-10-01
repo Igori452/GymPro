@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/template.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>GymPro</title>
 </head>
 <body>
@@ -13,6 +14,11 @@
             <a class="logo" href="">
                 <span class="logo-text">Gym<span>Pro</span></span>
             </a>
+            <nav class="nav__burger">
+                <div class="nav__burger__line"></div>
+                <div class="nav__burger__line"></div>
+                <div class="nav__burger__line"></div>
+            </nav>
             <nav class="nav">
                 <a href="pages/task1/index.html" class="nav__link">задание 1</a>
                 <a href="pages/task2/index.html" class="nav__link">задание 2</a>
@@ -24,18 +30,20 @@
 
     <main>
 
-        <section class="hero-section container">
-            <img src="images/top-gym-image.png" alt="image" class="hero-section__image-content">
-            <div class="hero-section__text-content">
-                <div class="hero-section__logo">GymPro</div>
-                <div class="hero-section__slogan">gram for you</div>
-                <div class="hero-section__line"></div>
-                <div class="hero-section__desc">
-                    Составим персональный план тренировок под твой вес, уровень, обородувание и цель за пару минут.
+        <section class="hero-section">
+            <div class="hero-section__wrapper container">
+                <img src="images/top-gym-image.png" alt="image" class="hero-section__image-content">
+                <div class="hero-section__text-content">
+                    <div class="hero-section__logo">GymPro</div>
+                    <div class="hero-section__slogan">gram for you</div>
+                    <div class="hero-section__line"></div>
+                    <div class="hero-section__desc">
+                        Составим персональный план тренировок под твой вес, уровень, обородувание и цель за пару минут.
+                    </div>
+                    <button class="hero-section__btn">
+                        попробовать &rarr;
+                    </button>
                 </div>
-                <button class="hero-section__btn">
-                    попробовать &rarr;
-                </button>
             </div>
         </section>
 
