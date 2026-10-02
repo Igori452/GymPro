@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../styles/template.css">
+    <link rel="stylesheet" href="../../styles/template.css">
+    <link rel="stylesheet" href="../../styles/media.css">
+    <script src="../../scripts/burger.js" defer></script>
     <title>Pic</title>
 </head>
 <body>
@@ -13,11 +16,21 @@
             <a class="logo" href="../../index.html">
                 <span class="logo-text">Gym<span>Pro</span></span>
             </a>
-            <nav class="nav">
-                <a href="" class="nav__link">задание 1</a>
-                <a href="../task2/index.html" class="nav__link">задание 2</a>
-                <a href="#" class="nav__link">задание 3</a>
-                <a href="#" class="nav__link">задание 4</a>
+            <button class="nav__burger" id="nav__burger__btn">
+                <div class="nav__burger__line"></div>
+                <div class="nav__burger__line"></div>
+                <div class="nav__burger__line"></div>
+            </button>
+            <div id="nav__burger__background"></div>
+            <nav class="nav" id="nav__burger">
+                <div class="nav__title__menu">
+                    <span>Menu</span>
+                    <button id="nav__burger__close">&times;</button>
+                </div>
+                <a href="" class="nav__link">задание 1 <span class="nav__link__arrow">&rarr;</span></a>
+                <a href="../task2/index.html" class="nav__link">задание 2 <span class="nav__link__arrow">&rarr;</span></a>
+                <a href="#" class="nav__link">задание 3 <span class="nav__link__arrow">&rarr;</span></a>
+                <a href="#" class="nav__link">задание 4 <span class="nav__link__arrow">&rarr;</span></a>
             </nav>
         </div>
     </header>

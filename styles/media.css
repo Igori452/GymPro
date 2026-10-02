@@ -125,16 +125,67 @@
 
     .nav
     {
-        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        background: #fff;
+    }
+
+    #nav__burger.open 
+    {
+        transform: translateX(0);
+    }
+
+    #nav__burger__background
+    {
+        display: block;
+    }
+
+    .nav__link 
+    {
+        padding: 12px 10px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+
+        border-top: 2px solid #000;
+
+        color: #000;
+    }
+
+    .nav__link:nth-child(5) 
+    {
+        border-bottom: 2px solid #000;
     }
 
     .nav__burger 
     {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 7px;
 
         width: 35px;
+    }
+
+    .nav__link__arrow 
+    {
+        display: inline;
+    }
+
+    .nav__title__menu 
+    {
+        display: flex;
     }
 
     .hero-section__wrapper
@@ -287,5 +338,246 @@
 
 @media (max-width: 768px) 
 {
+    .nav__burger__line
+    {
+        height: 3px;
+    }
 
+    .nav__burger 
+    {
+        width: 30px;
+    }
+
+    .hero-section__text-content
+    {
+        width: 80%;
+    }
+
+    .hero-section__logo 
+    {
+        font-size: 80px;
+    }
+
+    .hero-section__slogan
+    {
+        font-size: 42px;
+    }
+
+    .hero-section__desc
+    {
+        font-size: 16px;
+    }
+
+    .hero-section__btn
+    {
+        width: 230px;
+        height: 58px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .section__title 
+    {
+        font-size: 30px;
+    }
+
+    section + section
+    {
+        margin-top: 70px;
+    }
+
+    .algorithm__steps__subtitle__number
+    {
+        width: 55px;
+        height: 55px;
+    }
+
+    .algorithm__steps__subtitle
+    {
+        font-size: 24px;
+    }
+
+    .algorithm__steps_content p 
+    {
+        font-size: 16px;
+    }
+    
+    .case__content
+    {
+        font-size: 15px;
+    }
+
+    .case__content__context
+    {
+        padding: 20px;
+    }
+
+    .case__content__exercises 
+    {
+        grid-auto-flow: row;
+    }
+
+    .case__content__exercises li 
+    {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .case__content__exercises li + li 
+    {
+        margin-top: 20px;
+    }
+
+    .reviews ul {
+        grid-template-columns: 100%;
+    }
+
+    .reviews__title span, .reviews__title h3 
+    {
+        font-size: 17px;
+    }
+
+    .reviews ul li {
+        padding: 20px 20px;
+        font-size: 14px;
+    }
+
+    .reviews__title__line 
+    {
+        width: 40%;
+    }
+
+    .footer__contacts__socials li img 
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer__contacts__mail 
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 498px) 
+{   
+    .container 
+    {
+        padding: 0px 15px;
+    }
+
+    .header 
+    {
+        padding: 25px 0px;
+    }
+
+    .hero-section__logo 
+    {
+        width: 100%;
+
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .hero-section__slogan 
+    {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero-section__desc 
+    {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero-section__btn 
+    {
+        margin: 0 auto;
+        margin-top: 40px;
+
+        width: 190px;
+        height: 50px;
+
+        font-size: 14px;
+        border-radius: 12px;
+    }
+
+    .section__title 
+    {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    section + section 
+    {
+        margin-top: 60px;
+    }
+
+    .algorithm__steps__subtitle 
+    {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .algorithm__steps_content p 
+    {
+        font-size: 14px;
+    }
+
+    .algorithm__steps__subtitle__number
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .case 
+    {
+        padding: 30px 0px;
+    }
+        
+    .case__content__context
+    {
+        padding: 15px;
+    }
+
+    .case__content 
+    {
+        font-size: 12px;
+    }
+
+    .algorithm__steps_content 
+    {
+        padding-left: 10px;
+    }
+
+    .case__content__exercises li 
+    {
+        padding-left: 15px;
+    }
+
+    .reviews ul li 
+    {
+        padding: 15px 15px;
+    }
+
+    .reviews__title__line 
+    {
+        width: 0%;
+    }
+
+    .reviews__title span, .reviews__title h3 
+    {
+        font-size: 15px;
+    }
+
+    .footer__content .logo 
+    {
+        display: none;
+    }
+
+    .footer__content 
+    {
+        justify-content: center;
+    }
 }

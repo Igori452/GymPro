@@ -94,6 +94,11 @@ ul
 
 .nav__burger 
 {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
     display: none;
 }
 
@@ -106,6 +111,66 @@ ul
     border-radius: 20px;
 }
 
+.nav__link__arrow
+{
+    font-size: 24px;
+
+    display: none;
+}
+
+.nav__title__menu 
+{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 15px;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+
+    display: none;
+}
+
+.nav__title__menu button 
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 33px;
+}
+
+#nav__burger__background 
+{
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.4s ease;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#nav__burger__background.open {
+    opacity: 1;
+    visibility: visible;
+}
+
 .nav 
 {
     display: inline-flex;
@@ -115,6 +180,9 @@ ul
 
 .nav__link 
 {
+    display: flex;
+    gap: 60px;
+
     font-size: 18px;
     color: #fff;
     font-family: sans-serif;

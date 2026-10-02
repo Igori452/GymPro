@@ -1,3 +1,12 @@
+.animation__picture__section 
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .animation__picture 
 {
 

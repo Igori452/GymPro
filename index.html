@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/template.css">
     <link rel="stylesheet" href="styles/media.css">
+    <script src="scripts/burger.js" defer></script>
     <title>GymPro</title>
 </head>
 <body>
@@ -14,16 +15,21 @@
             <a class="logo" href="">
                 <span class="logo-text">Gym<span>Pro</span></span>
             </a>
-            <nav class="nav__burger">
+            <button class="nav__burger" id="nav__burger__btn">
                 <div class="nav__burger__line"></div>
                 <div class="nav__burger__line"></div>
                 <div class="nav__burger__line"></div>
-            </nav>
-            <nav class="nav">
-                <a href="pages/task1/index.html" class="nav__link">задание 1</a>
-                <a href="pages/task2/index.html" class="nav__link">задание 2</a>
-                <a href="#" class="nav__link">задание 3</a>
-                <a href="#" class="nav__link">задание 4</a>
+            </button>
+            <div id="nav__burger__background"></div>
+            <nav class="nav" id="nav__burger">
+                <div class="nav__title__menu">
+                    <span>Menu</span>
+                    <button id="nav__burger__close">&times;</button>
+                </div>
+                <a href="pages/task1/index.html" class="nav__link">задание 1 <span class="nav__link__arrow">&rarr;</span></a>
+                <a href="pages/task2/index.html" class="nav__link">задание 2 <span class="nav__link__arrow">&rarr;</span></a>
+                <a href="#" class="nav__link">задание 3 <span class="nav__link__arrow">&rarr;</span></a>
+                <a href="#" class="nav__link">задание 4 <span class="nav__link__arrow">&rarr;</span></a>
             </nav>
         </div>
     </header>
