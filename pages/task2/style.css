@@ -113,7 +113,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-     animation: rocket--static .5s infinite alternate ease-in-out;
+    animation: rocket--static .5s infinite alternate ease-in-out;
 }
 
 .animation__picture__flying__rocket 
