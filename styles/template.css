@@ -5,12 +5,14 @@ body, html
     min-height: 100vh;
 }
 
-body {
+body 
+{
     display: flex;
     flex-direction: column;
 }
 
-main {
+main 
+{
     flex: 1;
 }
 

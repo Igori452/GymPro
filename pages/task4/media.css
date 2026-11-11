@@ -1,0 +1,16 @@
+@media (max-width: 650px) {
+    .down-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .down-section__left-down-section,
+    .down-section__right-down-section {
+        width: 100%;
+    }
+
+    #workspace {
+        margin: 10px;
+    }
+}

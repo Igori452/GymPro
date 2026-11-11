@@ -1,0 +1,143 @@
+.top-section 
+{
+    border: 2px solid black;
+
+    width: 80%;
+    padding: 10px;
+
+    margin: 0px auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 10px;
+    gap: 10px;
+    font-weight: bold;  
+}
+
+.down-section 
+{
+    width: 80%;
+    padding: 10px 0px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0px auto;
+}
+
+.down-section__left-down-section 
+{
+    width: 40%;
+
+    min-height: 200px;
+
+    box-sizing: border-box;
+    border: 2px solid black;
+    
+}
+
+.down-section__right-down-section 
+{
+    width: 50%;
+
+    min-height: 200px;
+
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.down-section__right-down-section__data-form 
+{
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+#data-input 
+{
+    width: 60%;
+    padding: 3px;
+
+    background: gray;
+    border: 0px;
+    outline: 0;
+
+    color: white;
+}
+
+#puzzle-out 
+{
+
+    background: gray;
+    border: 0px;
+    outline: 0;
+
+    transition: all .2s ease-in-out;
+}
+
+#puzzle-out:hover 
+{
+    background: #d2cbcb;
+}
+
+#workspace {
+    position: relative;
+    margin: 20px;
+    border: 1px solid blue;
+    min-height: 300px;
+    background-color: #f0f8ff;
+    overflow: hidden;
+}
+
+#workspace li {
+    position: absolute;
+    margin: 0;
+    list-style: none;
+    cursor: grab;
+    user-select: none;
+
+    padding: 6px 6px 6px 25px;
+    box-sizing: border-box;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    transition: transform 0.1s;
+}
+
+.associative-list 
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 92%;
+}
+
+.associative-list-items 
+{
+    border: 3px solid transparent;
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+
+    padding-left: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+
+}
+
+.associative-list li + li 
+{
+    margin-top: 10px;
+}
